@@ -44,10 +44,7 @@ module.exports = {
       'text-input': 23,
       accordion: 14,
       modal: 11,
-      rating: 18,
-      password: 20,
-      tnc: 12,
-      range: 19
+      password: 20
     }],
     'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
   },

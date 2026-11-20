@@ -659,13 +659,13 @@ btn.dispatch({ type: 'click' });</code></pre>
               <tr><td><code>options.listenChanges</code></td><td>Set <code>true</code> to receive <code>'change'</code> callbacks after registration.</td></tr>
             </table>
             <pre><code>// Inside a component decorator:
-export default async function decorateRating(element, fd, container, formId) {
+export default async function decorateQuantity(element, fd, container, formId) {
   subscribe(element, formId, (div, model, eventType, payload) => {
     if (eventType === 'register') {
-      renderStars(div, model.value);
+      renderQuantity(div, model.value);
     }
     if (eventType === 'change') {
-      renderStars(div, payload.changes[0].currentValue);
+      renderQuantity(div, payload.changes[0].currentValue);
     }
   }, { listenChanges: true });
 }</code></pre>

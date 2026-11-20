@@ -83,8 +83,8 @@ All 11 registered field renderers:
 
 **mappings.js overview:**
 
-- **OOTBComponentDecorators**: accordion, file, modal, password, rating, repeat, tnc, toggleable-link, wizard
-- **customComponents** (default: ['range'])
+- **OOTBComponentDecorators**: accordion, file, modal, password, repeat, toggleable-link, wizard
+- **customComponents** (default: [])
 - **loadComponent**:
   - Status tracking via dataset.componentStatus (loading/loaded)
   - CSS load from components directory

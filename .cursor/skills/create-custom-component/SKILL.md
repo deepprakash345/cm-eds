@@ -90,7 +90,7 @@ Add the component name to the appropriate array:
 
 ```js
 // For custom components (loaded by :type match from fd:viewType):
-let customComponents = ['range', '<name>'];
+let customComponents = ['<name>'];
 
 // OR for OOTB-style decorators:
 const OOTBComponentDecorators = ['accordion', ..., '<name>'];

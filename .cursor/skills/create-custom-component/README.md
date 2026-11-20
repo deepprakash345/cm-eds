@@ -49,7 +49,7 @@ Ask your coding assistant to create a custom component. Example queries:
 - "Create a custom slider component based on number-input"
 - "I need a custom date-of-birth field that validates age"
 - "Build a custom dropdown with search/filter"
-- "Create a rating component that extends number-input"
+- "Create a quantity component that extends number-input"
 
 ### Optional auto-routing
 

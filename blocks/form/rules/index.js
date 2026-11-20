@@ -67,7 +67,7 @@ function handleActiveChild(id, form) {
 export async function fieldChanged(payload, form, generateFormRendition) {
   const { changes, field: fieldModel } = payload;
   const {
-    id, name, fieldType, ':type': componentType, readOnly, type, displayValue, displayFormat, displayValueExpression,
+    id, name, fieldType, readOnly, type, displayValue, displayFormat, displayValueExpression,
     activeChild, qualifiedName,
   } = fieldModel;
   const field = form.querySelector(`#${id}`);
@@ -182,10 +182,6 @@ export async function fieldChanged(payload, form, generateFormRendition) {
           if (readOnly === false) {
             disableElement(field, !currentValue);
           }
-        } else if (componentType === 'rating') {
-          if (readOnly === false) {
-            fieldWrapper.querySelector('.rating')?.classList.toggle('disabled', !currentValue);
-          }
         } else {
           field.toggleAttribute('disabled', currentValue === false);
         }
@@ -197,8 +193,6 @@ export async function fieldChanged(payload, form, generateFormRendition) {
           });
         } else if (fieldType === 'drop-down') {
           disableElement(field, currentValue);
-        } else if (componentType === 'rating') {
-          fieldWrapper.querySelector('.rating')?.classList.toggle('disabled', currentValue === true);
         } else {
           field.toggleAttribute('disabled', currentValue === true);
         }

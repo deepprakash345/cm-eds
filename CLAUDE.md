@@ -47,10 +47,7 @@ blocks/form/
 │   ├── file/
 │   ├── modal/
 │   ├── password/
-│   ├── rating/
-│   ├── range/
 │   ├── repeat/                       — Repeatable panel logic
-│   ├── tnc/
 │   ├── toggleable-link/
 │   └── wizard/
 ├── integrations/

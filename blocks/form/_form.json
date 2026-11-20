@@ -28,12 +28,6 @@
       "...": "./components/password/_password.json#/definitions" 
     },
     { 
-      "...": "./components/rating/_rating.json#/definitions" 
-    },
-    { 
-      "...": "./components/tnc/_tnc.json#/definitions" 
-    },
-    { 
       "...": "./components/wizard/_wizard.json#/definitions" 
     }
   ],
@@ -94,12 +88,9 @@
         "password",
         "plain-text",
         "radio-group",
-        "rating",
         "telephone-input",
         "text-input",
-        "tnc",
-        "wizard",
-        "range"
+        "wizard"
       ]
     }
   ]

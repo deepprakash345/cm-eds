@@ -25,17 +25,6 @@ export const ueFormDef = {
       },
       ':type': 'core/fd/components/form/text/v1/text',
     },
-    rating: {
-      id: 'rating-input',
-      fieldType: 'text-input',
-      label: {
-        value: 'Text Input',
-      },
-      properties: {
-        'fd:path': '/content/test2/index/jcr:content/root/section_0/form/textinput',
-      },
-      ':type': 'rating',
-    },
     panelcontainer: {
       id: 'panelcontainer-084914a499',
       fieldType: 'panel',
