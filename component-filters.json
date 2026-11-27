@@ -63,6 +63,7 @@
       "password",
       "plain-text",
       "radio-group",
+      "star-rating",
       "telephone-input",
       "text-input",
       "wizard"

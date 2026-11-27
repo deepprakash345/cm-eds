@@ -1,0 +1,52 @@
+.form .star-rating-widget {
+  display: inline-flex;
+  gap: 4px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.form .star-rating-widget:focus {
+  outline: 2px solid #1473e6;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.form .star-rating-star {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.form .star-rating-star .star-rating-empty {
+  color: #d6d6d6;
+}
+
+.form .star-rating-star .star-rating-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  color: #e0a800;
+  white-space: nowrap;
+}
+
+.form .star-rating-value {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 0.85rem;
+}
+
+.form .star-rating-value:empty {
+  display: none;
+}

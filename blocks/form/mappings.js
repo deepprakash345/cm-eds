@@ -1,6 +1,6 @@
 import { loadCSS } from '../../scripts/aem.js';
 
-let customComponents = [];
+let customComponents = ['star-rating'];
 const OOTBComponentDecorators = ['accordion', 'file', 'modal', 'password', 'repeat', 'toggleable-link', 'wizard'];
 
 export function setCustomComponents(components) {

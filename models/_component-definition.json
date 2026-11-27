@@ -39,7 +39,11 @@
     {
       "title": "Custom Form Components",
       "id": "custom-components",
-      "components": []
+      "components": [
+        {
+          "...": "../blocks/form/components/star-rating/_star-rating.json#/definitions"
+        }
+      ]
     }
   ]
 }

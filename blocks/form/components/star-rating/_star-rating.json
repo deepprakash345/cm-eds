@@ -1,0 +1,74 @@
+{
+    "definitions": [
+        {
+            "title": "Star Rating",
+            "id": "star-rating",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
+                        "template": {
+                            "jcr:title": "Star Rating",
+                            "fieldType": "number-input",
+                            "fd:viewType": "star-rating"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "star-rating",
+            "fields": [
+                {
+                    "component": "tab",
+                    "label": "Basic",
+                    "name": "basic"
+                },
+                {
+                    "...": "../../models/form-common/_basic-input-placeholder-fields.json#/fields"
+                },
+                {
+                    "component": "number",
+                    "name": "default",
+                    "label": "Default Value",
+                    "valueType": "number"
+                },
+                {
+                    "component": "number",
+                    "name": "maxStars",
+                    "label": "Maximum number of stars",
+                    "valueType": "number"
+                },
+                {
+                    "component": "select",
+                    "name": "allowHalf",
+                    "label": "Allow half-star ratings",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "value": "true"
+                        },
+                        {
+                            "name": "No",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "component": "tab",
+                    "label": "Validation",
+                    "name": "validation"
+                },
+                {
+                    "...": "../../models/form-common/_number-validation-fields.json#/fields"
+                },
+                {
+                    "...": "../../models/form-common/_help-container.json#/fields"
+                }
+            ]
+        }
+    ]
+}

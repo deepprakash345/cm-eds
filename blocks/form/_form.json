@@ -29,6 +29,9 @@
     },
     { 
       "...": "./components/wizard/_wizard.json#/definitions" 
+    },
+    { 
+      "...": "./components/star-rating/_star-rating.json#/definitions" 
     }
   ],
   "models": [
@@ -88,6 +91,7 @@
         "password",
         "plain-text",
         "radio-group",
+        "star-rating",
         "telephone-input",
         "text-input",
         "wizard"
